@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<% include ./partials/templates/head.ejs %>
+<body>
+<div class="container">
+<div class="col-sm-6 col-sm-offset-3">
+
+    <h1><span class="fa fa-sign-in"></span> RESET PASSWORD </h1>
+
+    <!-- LOGIN FORM -->
+    <form action="/reset" method="post">
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" name="email" value="<%= user.email %>">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+
+        <button type="submit" class="btn btn-warning btn-lg">reset</button>
+    </form>
+
+    <hr>
+
+    <p>Already have an account? <a href="/login">Login</a></p>
+    <p>Or go <a href="/">home</a>.</p>
+   
+</div>
+</div>
+<% include ./partials/templates/reload.ejs %>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<% include ./partials/templates/head.ejs %>
+	<body>
+		<div class="container">
+			<div class="col-sm-6 col-sm-offset-3">
+
+				<h1><span class="fa fa-sign-in"></span> Login</h1>
+
+				<% if (message.length > 0) { %>
+					<div class="alert alert-danger"><%= message %></div>
+				<% } %>
+
+				<!-- LOGIN FORM -->
+				<form action="/login" method="post">
+					<div class="form-group">
+						<label>Email</label>
+						<input type="text" class="form-control" name="email">
+					</div>
+					<div class="form-group">
+						<label>Password</label>
+						<input type="password" class="form-control" name="password">
+					</div>
+
+					<button type="submit" class="btn btn-warning btn-lg">Login</button>
+				</form>
+
+				<hr>
+				<a href="/" class="btn btn-default"><span class="signup"></span> Home </a>
+				<a href="/signup" class="btn btn-default"><span class="signup-user"></span> Signup </a>				
+				<a href="/forgot" class="btn btn-default"><span class="reset-user"></span> Forgot Password </a>
+			
+				<hr>
+				<% include ./partials/templates/footer.ejs %>
+			</div>
+			
+		</div>
+		<% include ./partials/templates/reload.ejs %>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<% include ./partials/templates/head.ejs %>
+	<body>
+		<div class="container">
+			<div class="col-sm-6 col-sm-offset-3">
+				
+				<h1><span class="fa fa-sign-in"></span> Password Reset Request Sent </h1>
+				<hr>
+				
+				<a href="/" class="btn btn-default"><span class="home-user"></span> Home </a>
+				<a href="/login" class="btn btn-default"><span class="signup-user"></span> Login </a>				
+				<a href="/signup" class="btn btn-default"><span class="signup-user"></span> Signup </a>
+				<a href="/forgot" class="btn btn-default"><span class="reset-user"></span> Forgot Password </a>
+				
+				<hr>
+				<% include ./partials/templates/footer.ejs %>
+			</div>
+		</div>
+		<% include ./partials/templates/reload.ejs %>
+	</body>
+</html>

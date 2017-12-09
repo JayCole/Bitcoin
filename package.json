@@ -1,0 +1,48 @@
+{
+  "name": "passport_forgot",
+  "main": "app/server.js",
+  "scripts": {
+    "start": "nodemon -e css,ejs,js "
+  },
+  "dependencies": {
+    "async": "latest",
+    "bcrypt-nodejs": "latest",
+    "body-parser": "latest",
+    "connect-flash": "latest",
+    "cookie-parser": "latest",
+    "crypto": "latest",
+    "ejs": "latest",
+    "express": "latest",
+    "express-session": "latest",
+    "express-validator": "^3.2.0",
+    "method-override": "latest",
+    "mongoose": "latest",
+    "morgan": "latest",
+    "nodemailer": "latest",
+    "passport": "latest",
+    "passport-facebook": "latest",
+    "passport-google-oauth": "latest",
+    "passport-local": "latest",
+    "passport-twitter": "latest",
+    "reload": "latest"
+  },
+  "version": "1.0.0",
+  "description": "User Authentication and reset ",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JayCole/Passport_forgot.git"
+  },
+  "keywords": [
+    "express.js",
+    "nodejs",
+    "forgot",
+    "reset"
+  ],
+  "author": "Jay Cole",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JayCole/Passport_forgot/issues"
+  },
+  "homepage": "https://github.com/JayCole/Passport_forgot#readme"
+}
