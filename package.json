@@ -8,6 +8,7 @@
     "async": "latest",
     "bcrypt-nodejs": "latest",
     "body-parser": "latest",
+    "coinbase": "^2.0.6",
     "connect-flash": "latest",
     "cookie-parser": "latest",
     "crypto": "latest",
